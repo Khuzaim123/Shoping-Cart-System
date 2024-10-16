@@ -1,0 +1,17 @@
+D:\Programing\C sharp\Repos\ShopingCart\bin\Debug\net8.0-windows\ShopingCart.exe
+D:\Programing\C sharp\Repos\ShopingCart\bin\Debug\net8.0-windows\ShopingCart.deps.json
+D:\Programing\C sharp\Repos\ShopingCart\bin\Debug\net8.0-windows\ShopingCart.runtimeconfig.json
+D:\Programing\C sharp\Repos\ShopingCart\bin\Debug\net8.0-windows\ShopingCart.dll
+D:\Programing\C sharp\Repos\ShopingCart\bin\Debug\net8.0-windows\ShopingCart.pdb
+D:\Programing\C sharp\Repos\ShopingCart\obj\Debug\net8.0-windows\ShopingCart.csproj.GenerateResource.cache
+D:\Programing\C sharp\Repos\ShopingCart\obj\Debug\net8.0-windows\ShopingCart.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programing\C sharp\Repos\ShopingCart\obj\Debug\net8.0-windows\ShopingCart.AssemblyInfoInputs.cache
+D:\Programing\C sharp\Repos\ShopingCart\obj\Debug\net8.0-windows\ShopingCart.AssemblyInfo.cs
+D:\Programing\C sharp\Repos\ShopingCart\obj\Debug\net8.0-windows\ShopingCart.csproj.CoreCompileInputs.cache
+D:\Programing\C sharp\Repos\ShopingCart\obj\Debug\net8.0-windows\ShopingCart.dll
+D:\Programing\C sharp\Repos\ShopingCart\obj\Debug\net8.0-windows\refint\ShopingCart.dll
+D:\Programing\C sharp\Repos\ShopingCart\obj\Debug\net8.0-windows\ShopingCart.pdb
+D:\Programing\C sharp\Repos\ShopingCart\obj\Debug\net8.0-windows\ShopingCart.genruntimeconfig.cache
+D:\Programing\C sharp\Repos\ShopingCart\obj\Debug\net8.0-windows\ref\ShopingCart.dll
+D:\Programing\C sharp\Repos\ShopingCart\obj\Debug\net8.0-windows\ShopingCart.Shopingcart.resources
+D:\Programing\C sharp\Repos\ShopingCart\obj\Debug\net8.0-windows\ShopingCart.listform.resources
