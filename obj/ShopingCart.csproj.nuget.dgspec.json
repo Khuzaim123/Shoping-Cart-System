@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Programing\\C sharp\\Repos\\ShopingCart\\ShopingCart.csproj": {}
+    "D:\\Programing\\C sharp\\Repos\\ShopingCart\\Shoping-Cart-System\\ShopingCart.csproj": {}
   },
   "projects": {
-    "D:\\Programing\\C sharp\\Repos\\ShopingCart\\ShopingCart.csproj": {
+    "D:\\Programing\\C sharp\\Repos\\ShopingCart\\Shoping-Cart-System\\ShopingCart.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Programing\\C sharp\\Repos\\ShopingCart\\ShopingCart.csproj",
+        "projectUniqueName": "D:\\Programing\\C sharp\\Repos\\ShopingCart\\Shoping-Cart-System\\ShopingCart.csproj",
         "projectName": "ShopingCart",
-        "projectPath": "D:\\Programing\\C sharp\\Repos\\ShopingCart\\ShopingCart.csproj",
+        "projectPath": "D:\\Programing\\C sharp\\Repos\\ShopingCart\\Shoping-Cart-System\\ShopingCart.csproj",
         "packagesPath": "C:\\Users\\Khuzaim\\.nuget\\packages\\",
-        "outputPath": "D:\\Programing\\C sharp\\Repos\\ShopingCart\\obj\\",
+        "outputPath": "D:\\Programing\\C sharp\\Repos\\ShopingCart\\Shoping-Cart-System\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Khuzaim\\AppData\\Roaming\\NuGet\\NuGet.Config",

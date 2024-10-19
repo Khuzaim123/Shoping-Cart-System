@@ -30,23 +30,43 @@
         private void InitializeComponent()
         {
             layoutpanel = new Panel();
+            itemprices = new Label();
+            itemsnames = new Label();
             backbutton = new Button();
             tptext = new TextBox();
             totalprice = new Label();
-            itemsnames = new Label();
-            itemprices = new Label();
+            labelquantity = new Label();
             layoutpanel.SuspendLayout();
             SuspendLayout();
             // 
             // layoutpanel
             // 
             layoutpanel.AutoScroll = true;
+            layoutpanel.Controls.Add(labelquantity);
             layoutpanel.Controls.Add(itemprices);
             layoutpanel.Controls.Add(itemsnames);
             layoutpanel.Location = new Point(0, 70);
             layoutpanel.Name = "layoutpanel";
             layoutpanel.Size = new Size(800, 380);
             layoutpanel.TabIndex = 0;
+            // 
+            // itemprices
+            // 
+            itemprices.AutoSize = true;
+            itemprices.Location = new Point(150, 4);
+            itemprices.Name = "itemprices";
+            itemprices.Size = new Size(41, 20);
+            itemprices.TabIndex = 1;
+            itemprices.Text = "Price";
+            // 
+            // itemsnames
+            // 
+            itemsnames.AutoSize = true;
+            itemsnames.Location = new Point(10, 4);
+            itemsnames.Name = "itemsnames";
+            itemsnames.Size = new Size(66, 20);
+            itemsnames.TabIndex = 0;
+            itemsnames.Text = "Products";
             // 
             // backbutton
             // 
@@ -75,23 +95,14 @@
             totalprice.TabIndex = 3;
             totalprice.Text = "Total Price:";
             // 
-            // itemsnames
+            // labelquantity
             // 
-            itemsnames.AutoSize = true;
-            itemsnames.Location = new Point(10, 4);
-            itemsnames.Name = "itemsnames";
-            itemsnames.Size = new Size(66, 20);
-            itemsnames.TabIndex = 0;
-            itemsnames.Text = "Products";
-            // 
-            // itemprices
-            // 
-            itemprices.AutoSize = true;
-            itemprices.Location = new Point(200, 4);
-            itemprices.Name = "itemprices";
-            itemprices.Size = new Size(41, 20);
-            itemprices.TabIndex = 1;
-            itemprices.Text = "Price";
+            labelquantity.AutoSize = true;
+            labelquantity.Location = new Point(300, 4);
+            labelquantity.Name = "labelquantity";
+            labelquantity.Size = new Size(65, 20);
+            labelquantity.TabIndex = 2;
+            labelquantity.Text = "Quantity";
             // 
             // listform
             // 
@@ -122,6 +133,8 @@
         private Label pricees;
         private Label itemprices;
         private Label itemsnames;
+        private Label itemquantity;
+        private Label labelquantity;
         //private Button addtocart;
     }
 }

@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization.Metadata;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
@@ -32,7 +33,8 @@ namespace ShopingCart
                 new Item(4 , "Clip Board" , 800),
                 new Item(5 , "Ink" , 200),
                 new Item(6 , "Shapner" , 40),
-                new Item(7 , "Remover" , 50)
+                new Item(7 , "Remover" , 50),
+                new Item(8 , "XYZ" , 90)
             };
         }
         private void addtocart_Click(object sender, EventArgs e)
@@ -50,6 +52,7 @@ namespace ShopingCart
                     Cart.AddItem(item);
                     MessageBox.Show($"{quantity} {item.Name}(s) added to cart!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     tptext.Text = Cart.CalculateTotal().ToString();
+                    item.quantity -= quantity;
                 }
                 else
                 {
@@ -67,29 +70,44 @@ namespace ShopingCart
             int sety = 40;
             for (int i = 0; i < items.Count; i++)
             {
+                // Declaration
+                itemquantity = new Label();
                 itembutton = new Button();
                 itemname = new Label();
                 pricees = new Label();
+                int quantity = items[i].quantity;
+                // Item name
                 itemname.Text = items[i].Name + ": ";
                 itemname.Name = "Itemname" + i;
                 itemname.Size = new Size(150, 30);
                 itemname.Location = new Point(10, sety);
+                // pricees
                 pricees.Text = items[i].Price.ToString();
                 pricees.Name = "Itemprice" + i;
                 pricees.Size = new Size(150, 30);
-                pricees.Location = new Point(200, sety);
+                pricees.Location = new Point(155, sety);
+                // item Quantity
+                itemquantity.Name = "ItemQuantity" + i;
+                itemquantity.Size = new Size(150, 30);
+                itemquantity.Location = new Point(300 , sety);
+                itemquantity.Text = items[i].quantity.ToString();
+                // Item Button
                 itembutton.Location = new Point(500, sety);
                 itembutton.Name = "itembutton" + i;
                 itembutton.Size = new Size(100, 30);
                 itembutton.Text = "Add to cart";
                 itembutton.UseVisualStyleBackColor = true;
+                // Tag
                 itembutton.Tag = items[i];
                 itemname.Tag = items[i];
                 pricees.Tag = items[i];
+                itemquantity.Tag = items[i];
                 itembutton.Click += addtocart_Click;
+                // Control Layout
                 layoutpanel.Controls.Add(itembutton);
                 layoutpanel.Controls.Add(itemname);
                 layoutpanel.Controls.Add(pricees);
+                layoutpanel.Controls.Add(itemquantity);
                 sety += 40;
             }
         }

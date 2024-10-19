@@ -21,7 +21,6 @@ namespace ShopingCart
             if (existingItem != null)
             {
                 existingItem.quantity += item.quantity;
-                item.quantity -= existingItem.quantity;
             }
             else
             {
