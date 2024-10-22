@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Text.Json.Serialization.Metadata;
 using System.Threading.Tasks;
@@ -14,13 +15,21 @@ namespace ShopingCart
 {
     public partial class listform : Form
     {
-        public List<Item> items;
+
+
+
+        public List<Item> items = new List<Item>();
         public cart Cart;
+        public List<string> li = new List<string>();
         public listform(cart cart)
         {
+            Shopingcart s = new Shopingcart();
+            s.Hide();
             InitializeComponent();
             Cart = cart;
             loaditems();
+            layoutpanel.Visible = true;
+            itempanel.Visible = false;
         }
 
         public void loaditems()
@@ -42,17 +51,25 @@ namespace ShopingCart
             if (sender is Button button && button.Tag is Item item)
             {
                 string input = Microsoft.VisualBasic.Interaction.InputBox(
-                    $"Enter quantity for {item.Name}:",
+                    $"Enter quantity for {item.Name} (Available: {item.quantity}):",
                     "Quantity",
                     "1");
-
                 if (int.TryParse(input, out int quantity) && quantity > 0)
                 {
-                    item.quantity = quantity;
-                    Cart.AddItem(item);
-                    MessageBox.Show($"{quantity} {item.Name}(s) added to cart!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    tptext.Text = Cart.CalculateTotal().ToString();
-                    item.quantity -= quantity;
+                    if (quantity <= item.quantity)
+                    {
+                        item.quantity -= quantity;
+                        Cart.AddItem(new Item(item.Id, item.Name, item.Price) { quantity = quantity });
+                        MessageBox.Show($"{quantity} {item.Name}(s) added to cart!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        tptext.Text = Cart.CalculateTotal().ToString();
+                        li.Add($"{item.Name}  {quantity}");
+                        itemlist.DataSource = null;
+                        itemlist.DataSource = li;
+                    }
+                    else
+                    {
+                        MessageBox.Show($"Insufficient quantity. Only {item.quantity} {item.Name}(s) available.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
                 else
                 {
@@ -60,9 +77,11 @@ namespace ShopingCart
                 }
             }
         }
+
         private void backbutton_Click(object sender, EventArgs e)
         {
-
+            layoutpanel.Visible = true;
+            itempanel.Visible = false;
         }
 
         private void listform_Shown(object sender, EventArgs e)
@@ -89,7 +108,7 @@ namespace ShopingCart
                 // item Quantity
                 itemquantity.Name = "ItemQuantity" + i;
                 itemquantity.Size = new Size(150, 30);
-                itemquantity.Location = new Point(300 , sety);
+                itemquantity.Location = new Point(300, sety);
                 itemquantity.Text = items[i].quantity.ToString();
                 // Item Button
                 itembutton.Location = new Point(500, sety);
@@ -109,6 +128,40 @@ namespace ShopingCart
                 layoutpanel.Controls.Add(pricees);
                 layoutpanel.Controls.Add(itemquantity);
                 sety += 40;
+            }
+        }
+
+        private void viewcart_Click(object sender, EventArgs e)
+        {
+            layoutpanel.Visible = false;
+            itempanel.Visible = true;
+        }
+
+        private void delete_Click(object sender, EventArgs e)
+        {
+            if (itemlist.SelectedIndex != -1) 
+            {
+                string selectedindex = li[itemlist.SelectedIndex];
+                string name = selectedindex.Split(' ')[0];
+                var IN = Cart.items.FirstOrDefault(x => x.Name == name);
+                if (IN != null)
+                {
+                    var oi = items.FirstOrDefault(i => i.Id == IN.Id);
+                    if (oi != null)
+                    {
+                        oi.quantity = 100;
+                    }
+                    Cart.items.Remove(IN);
+                    li.RemoveAt(itemlist.SelectedIndex);
+                    itemlist.DataSource = null;
+                    itemlist.DataSource = li;
+                    tptext.Text = Cart.CalculateTotal().ToString();
+                    MessageBox.Show($"{name} has been removed sucessfully");
+                }
+            }
+            else
+            {
+                MessageBox.Show($"Enter a valid index");
             }
         }
     }

@@ -33,3 +33,4 @@ D:\Programing\C sharp\Repos\ShopingCart\Shoping-Cart-System\obj\Debug\net8.0-win
 D:\Programing\C sharp\Repos\ShopingCart\Shoping-Cart-System\obj\Debug\net8.0-windows\ShopingCart.pdb
 D:\Programing\C sharp\Repos\ShopingCart\Shoping-Cart-System\obj\Debug\net8.0-windows\ShopingCart.genruntimeconfig.cache
 D:\Programing\C sharp\Repos\ShopingCart\Shoping-Cart-System\obj\Debug\net8.0-windows\ref\ShopingCart.dll
+D:\Programing\C sharp\Repos\ShopingCart\Shoping-Cart-System\obj\Debug\net8.0-windows\ShopingCart.Properties.Resources.resources

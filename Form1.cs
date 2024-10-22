@@ -199,6 +199,7 @@ namespace ShopingCart
             // 
             // Shopingcart
             // 
+            BackColor = Color.LightSeaGreen;
             ClientSize = new Size(776, 464);
             Controls.Add(loginpanel);
             Controls.Add(signupanel);
@@ -235,7 +236,7 @@ namespace ShopingCart
             //{
             //    MessageBox.Show("Login successfull", "", MessageBoxButtons.OK);
                 cart cart = new cart();
-                listform ls = new listform(cart); 
+                listform ls = new listform(cart);
                 ls.Show();
             //}
             //else
