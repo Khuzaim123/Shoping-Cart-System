@@ -126,13 +126,8 @@ namespace ShopingCart
                 pricees.Name = "Itemprice" + i;
                 pricees.Size = new Size(150, 30);
                 pricees.Location = new Point(155, sety);
-                // item Quantity
-                itemquantity.Name = "ItemQuantity" + i;
-                itemquantity.Size = new Size(150, 30);
-                itemquantity.Location = new Point(300, sety);
-                itemquantity.Text = items[i].quantity.ToString();
                 // Item Button
-                itembutton.Location = new Point(500, sety);
+                itembutton.Location = new Point(300, sety);
                 itembutton.Name = "itembutton" + i;
                 itembutton.Size = new Size(100, 30);
                 itembutton.Text = "Add to cart";
@@ -142,13 +137,11 @@ namespace ShopingCart
                 itembutton.Tag = items[i];
                 itemname.Tag = items[i];
                 pricees.Tag = items[i];
-                itemquantity.Tag = items[i];
                 itembutton.Click += addtocart_Click;
                 // Control Layout
                 layoutpanel.Controls.Add(itembutton);
                 layoutpanel.Controls.Add(itemname);
                 layoutpanel.Controls.Add(pricees);
-                layoutpanel.Controls.Add(itemquantity);
                 sety += 40;
             }
         }
@@ -256,9 +249,9 @@ namespace ShopingCart
                     {
                         input = Microsoft.VisualBasic.Interaction.InputBox($"How much quantity that you want to remove for {IN.Name}. Avalaible Quantity {oi.quantity}:", "", "1");
                     }
-                    if (int.TryParse(input, out int quantity) && quantity <= IN.quantity)
+                    if (int.TryParse(input, out int quantity) && quantity <= IN.quantity && quantity > 0)
                     {
-                        if (quantity <= oi.quantity)
+                        if (quantity <= oi.quantity && quantity > 0)
                         {
                             IN.quantity -= quantity;
                             oi.quantity += quantity;

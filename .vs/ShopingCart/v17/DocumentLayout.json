@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "D:\\Programing\\C sharp\\Repos\\ShopingCart\\Shoping-Cart-System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E4C5B3D3-CB34-4FB3-AAFF-49B2FFCDD326}|ShopingCart.csproj|d:\\programing\\c sharp\\repos\\shopingcart\\shoping-cart-system\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4C5B3D3-CB34-4FB3-AAFF-49B2FFCDD326}|ShopingCart.csproj|solutionrelative:cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4C5B3D3-CB34-4FB3-AAFF-49B2FFCDD326}|ShopingCart.csproj|d:\\programing\\c sharp\\repos\\shopingcart\\shoping-cart-system\\listform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4C5B3D3-CB34-4FB3-AAFF-49B2FFCDD326}|ShopingCart.csproj|solutionrelative:listform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4C5B3D3-CB34-4FB3-AAFF-49B2FFCDD326}|ShopingCart.csproj|D:\\Programing\\C sharp\\Repos\\ShopingCart\\Shoping-Cart-System\\listform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E4C5B3D3-CB34-4FB3-AAFF-49B2FFCDD326}|ShopingCart.csproj|solutionrelative:listform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E4C5B3D3-CB34-4FB3-AAFF-49B2FFCDD326}|ShopingCart.csproj|d:\\programing\\c sharp\\repos\\shopingcart\\shoping-cart-system\\listform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E4C5B3D3-CB34-4FB3-AAFF-49B2FFCDD326}|ShopingCart.csproj|solutionrelative:listform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E4C5B3D3-CB34-4FB3-AAFF-49B2FFCDD326}|ShopingCart.csproj|D:\\Programing\\C sharp\\Repos\\ShopingCart\\Shoping-Cart-System\\listform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E4C5B3D3-CB34-4FB3-AAFF-49B2FFCDD326}|ShopingCart.csproj|solutionrelative:listform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E4C5B3D3-CB34-4FB3-AAFF-49B2FFCDD326}|ShopingCart.csproj|d:\\programing\\c sharp\\repos\\shopingcart\\shoping-cart-system\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4C5B3D3-CB34-4FB3-AAFF-49B2FFCDD326}|ShopingCart.csproj|solutionrelative:cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4C5B3D3-CB34-4FB3-AAFF-49B2FFCDD326}|ShopingCart.csproj|d:\\programing\\c sharp\\repos\\shopingcart\\shoping-cart-system\\listform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4C5B3D3-CB34-4FB3-AAFF-49B2FFCDD326}|ShopingCart.csproj|solutionrelative:listform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E4C5B3D3-CB34-4FB3-AAFF-49B2FFCDD326}|ShopingCart.csproj|d:\\programing\\c sharp\\repos\\shopingcart\\shoping-cart-system\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,32 +51,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 13,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "listform.cs",
               "DocumentMoniker": "D:\\Programing\\C sharp\\Repos\\ShopingCart\\Shoping-Cart-System\\listform.cs",
               "RelativeDocumentMoniker": "listform.cs",
               "ToolTip": "D:\\Programing\\C sharp\\Repos\\ShopingCart\\Shoping-Cart-System\\listform.cs",
               "RelativeToolTip": "listform.cs",
-              "ViewState": "AgIAAKwBAAAAAAAAAAAuwMUBAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAPoAAAAAAAAAAAAswP0AAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-17T07:56:59.649Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "D:\\Programing\\C sharp\\Repos\\ShopingCart\\Shoping-Cart-System\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "D:\\Programing\\C sharp\\Repos\\ShopingCart\\Shoping-Cart-System\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T07:56:29.085Z",
-              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -88,16 +84,7 @@
               "RelativeToolTip": "Form1.cs",
               "ViewState": "AgIAAOcAAAAAAAAAAAAmwPYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T04:24:28.459Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+              "WhenOpened": "2024-10-22T04:24:28.459Z"
             },
             {
               "$type": "Document",
@@ -133,8 +120,7 @@
               "RelativeToolTip": "ShopingCart.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-22T10:03:43.297Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-22T10:03:43.297Z"
             },
             {
               "$type": "Document",
@@ -158,12 +144,11 @@
               "RelativeToolTip": "Item.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAA4wAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T07:56:41.451Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-17T07:56:41.451Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "listform.Designer.cs",
               "DocumentMoniker": "D:\\Programing\\C sharp\\Repos\\ShopingCart\\Shoping-Cart-System\\listform.Designer.cs",
               "RelativeDocumentMoniker": "listform.Designer.cs",
@@ -176,16 +161,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "cart.cs",
               "DocumentMoniker": "D:\\Programing\\C sharp\\Repos\\ShopingCart\\Shoping-Cart-System\\cart.cs",
               "RelativeDocumentMoniker": "cart.cs",
               "ToolTip": "D:\\Programing\\C sharp\\Repos\\ShopingCart\\Shoping-Cart-System\\cart.cs",
               "RelativeToolTip": "cart.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwAQAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-17T07:56:26.272Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\Programing\\C sharp\\Repos\\ShopingCart\\Shoping-Cart-System\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "D:\\Programing\\C sharp\\Repos\\ShopingCart\\Shoping-Cart-System\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T07:56:29.085Z"
             },
             {
               "$type": "Bookmark",
@@ -193,7 +189,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "listform.cs [Design]",
               "DocumentMoniker": "D:\\Programing\\C sharp\\Repos\\ShopingCart\\Shoping-Cart-System\\listform.cs",
               "RelativeDocumentMoniker": "listform.cs",

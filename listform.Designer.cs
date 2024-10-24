@@ -30,8 +30,8 @@
         private void InitializeComponent()
         {
             layoutpanel = new Panel();
+            label1 = new Label();
             recom = new ListBox();
-            labelquantity = new Label();
             itemprices = new Label();
             itemsnames = new Label();
             itempanel = new Panel();
@@ -55,7 +55,6 @@
             tpad = new Label();
             card = new Button();
             cash = new Button();
-            label1 = new Label();
             layoutpanel.SuspendLayout();
             itempanel.SuspendLayout();
             checkpanel.SuspendLayout();
@@ -67,7 +66,6 @@
             layoutpanel.BackColor = SystemColors.GradientActiveCaption;
             layoutpanel.Controls.Add(label1);
             layoutpanel.Controls.Add(recom);
-            layoutpanel.Controls.Add(labelquantity);
             layoutpanel.Controls.Add(itemprices);
             layoutpanel.Controls.Add(itemsnames);
             layoutpanel.ForeColor = Color.Black;
@@ -76,23 +74,23 @@
             layoutpanel.Size = new Size(800, 391);
             layoutpanel.TabIndex = 0;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(555, 3);
+            label1.Name = "label1";
+            label1.Size = new Size(145, 20);
+            label1.TabIndex = 4;
+            label1.Text = "Recoomeded Items: ";
+            // 
             // recom
             // 
             recom.FormattingEnabled = true;
-            recom.Location = new Point(631, 26);
+            recom.Location = new Point(506, 26);
             recom.Name = "recom";
-            recom.Size = new Size(169, 364);
+            recom.Size = new Size(294, 364);
             recom.TabIndex = 3;
             recom.SelectedIndexChanged += recom_SelectedIndexChanged;
-            // 
-            // labelquantity
-            // 
-            labelquantity.AutoSize = true;
-            labelquantity.Location = new Point(300, 4);
-            labelquantity.Name = "labelquantity";
-            labelquantity.Size = new Size(65, 20);
-            labelquantity.TabIndex = 2;
-            labelquantity.Text = "Quantity";
             // 
             // itemprices
             // 
@@ -319,15 +317,6 @@
             cash.UseVisualStyleBackColor = true;
             cash.Click += cash_Click;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(634, 2);
-            label1.Name = "label1";
-            label1.Size = new Size(145, 20);
-            label1.TabIndex = 4;
-            label1.Text = "Recoomeded Items: ";
-            // 
             // listform
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -366,7 +355,6 @@
         private Label itemprices;
         private Label itemsnames;
         private Label itemquantity;
-        private Label labelquantity;
         private Button viewcart;
         private Panel itempanel;
         private ListBox itemlist;
