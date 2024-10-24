@@ -94,6 +94,7 @@ namespace ShopingCart
             loginpasstext.Name = "loginpasstext";
             loginpasstext.Size = new Size(221, 27);
             loginpasstext.TabIndex = 6;
+            loginpasstext.TextChanged += loginpasstext_TextChanged;
             // 
             // logintextuser
             // 
@@ -230,19 +231,20 @@ namespace ShopingCart
 
         private void loginbutton_Click(object sender, EventArgs e)
         {
-            //string user = logintextuser.Text;
-            //string pass = loginpasstext.Text;
-            //if (data.ContainsKey(user) && data[user] == pass)
-            //{
-            //    MessageBox.Show("Login successfull", "", MessageBoxButtons.OK);
+            string user = logintextuser.Text;
+            string pass = loginpasstext.Text;
+            if (data.ContainsKey(user) && data[user] == pass)
+            {
+                MessageBox.Show("Login successfull", "", MessageBoxButtons.OK);
                 cart cart = new cart();
                 listform ls = new listform(cart);
                 ls.Show();
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Invalid username or password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
+
+            }
+            else
+            {
+                MessageBox.Show("Invalid username or password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void signupbutton_Click(object sender, EventArgs e)
@@ -267,6 +269,15 @@ namespace ShopingCart
             MessageBox.Show("Your account has been created", "", MessageBoxButtons.OK);
             loginpanel.Visible = true;
             signupanel.Visible = false;
+        }
+
+        private void loginpasstext_TextChanged(object sender, EventArgs e)
+        {
+            //string pas;
+            //while (loginbutton.Click == false)
+            //{
+
+            //}
         }
     }
 }
